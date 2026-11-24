@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "r4-nav-bridge"
+version = "0.1.0"
+description = "Spanish pension NAV provider for Wealthfolio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "fastapi>=0.110",
+    "httpx>=0.27",
+]
+
+[tool.setuptools]
+py-modules = ["pension_provider"]
